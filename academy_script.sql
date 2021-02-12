@@ -89,5 +89,4 @@ select s.student_ID, concat(s.student_first_name, ' ', s.student_last_name) as '
 from result
 inner join students s on s.student_ID = result.student_ID
 inner join course c on c.course_ID = result.course_ID
-where s.student_first_name = "rajkumar"
-group by result.student_ID, result.course_ID;
+group by result.course_ID;
